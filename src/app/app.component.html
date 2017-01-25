@@ -1,5 +1,7 @@
 <h1>
     <button (click)="increment()">+</button>
     <button (click)="decrement()">-</button>
+    <button (click)="double()"> make number double</button>
+
     <p> Clicked: {{ (counter$ | async)?.counter }} times<br></p>
 </h1>

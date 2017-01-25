@@ -16,6 +16,8 @@ export function counterReducer(state: IInitialState = InitialState, action: { ty
       return Object.assign({}, state, { counter: state.counter+1 });
     case CounterAction.DECREMENT_COUNTER:
       return Object.assign({}, state, { counter: state.counter-1 });
+    case CounterAction.DOUBLE_COUNTER:
+      return Object.assign({}, state, { counter: state.counter*2 });
     default:
       return state;
   }

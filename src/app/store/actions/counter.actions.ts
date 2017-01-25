@@ -10,7 +10,8 @@ export class CounterAction {
     static DECREMENT_COUNTER: string = 'DECREMENT_COUNTER';
     static INCREMENT_SUCCESS: string = 'INCREMENT_SUCCESS';
     static DECREMENT_SUCCESS: string = 'DECREMENT_SUCCESS';
-    
+    static DOUBLE_COUNTER: string = 'DOUBLE_COUNTER';
+
     constructor(private ngRedux: NgRedux<IAppState>) {        
     }
 
@@ -21,6 +22,10 @@ export class CounterAction {
     decrement(): void {
         this.ngRedux.dispatch({ type: CounterAction.DECREMENT_COUNTER });
     }
-   
+    
+    double(): void {
+        this.ngRedux.dispatch({ type: CounterAction.DOUBLE_COUNTER });
+    }
+
 
 }

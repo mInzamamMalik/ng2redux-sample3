@@ -34,5 +34,8 @@ export class AppComponent {
     decrement(): void {
         this.counterAction.decrement();
     }
+    double(): void {
+        this.counterAction.double();
+    }
 
 }
